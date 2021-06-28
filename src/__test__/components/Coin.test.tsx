@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import Coin from '../../components/Coin';
 import CoinMock from './../../__mocks__/CoinMock';
 import CoinsMock from './../../__mocks__/CoinsMock';

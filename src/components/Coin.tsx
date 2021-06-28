@@ -9,13 +9,13 @@ interface CoinProps {
 
 const Coin = (props: CoinProps) => {
     const classes = useStyles();
-    const { name, price_usd } = props.coin;
+    const { id, name, price_usd } = props.coin;
     return (
         <Grid item xs={12} sm={3}>
             <Paper className={classes.paper} >
                  <h4>{name}</h4>
                  <p>{price_usd} usd</p>
-                 <Button size="small"><Link to={`/items/${props.coin.id}`}>View More</Link></Button>
+                 <Button size="small"><Link to={`/items/${id}`}>View More</Link></Button>
             </Paper>
         </Grid>
     )
